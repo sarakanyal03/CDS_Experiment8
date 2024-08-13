@@ -64,6 +64,8 @@ int main() {
     }
 }
 ```
+OUTPUT A: <BR>
+![EXP8A](https://github.com/sarakanyal03/CDS_Experiment8/blob/main/EXP8A.png)
 2) B : Addition of two matrices <br>
 ```
 //Addition of two matrices
@@ -109,6 +111,8 @@ int main() {
     
 }
 ```
+OUTPUT B: <BR>
+![EXP8B](https://github.com/sarakanyal03/CDS_Experiment8/blob/main/EXP8B.png)
 3) C: Subtraction of two matrices <br>
 ```
 //Subtraction of two matrices
@@ -154,6 +158,8 @@ int main() {
     
 }
 ```
+OUTPUT C: <BR>
+![EXP8C](https://github.com/sarakanyal03/CDS_Experiment8/blob/main/EXP8C.png)
 4) D : Multiplication of two matrices <br>
 ```
 // Matrix multiplication 
@@ -223,6 +229,8 @@ int main() {
     return 0;
 }
 ```
+OUTPUT D: <BR>
+![EXP8D](https://github.com/sarakanyal03/CDS_Experiment8/blob/main/EXP8D.png)
 5) E : Transpose of a matrix <br>
 ```
 #include <iostream>
@@ -264,7 +272,9 @@ int main() {
 
     return 0;
 }
-``` 
+```
+OUTPUT E: <BR>
+![EXP8E](https://github.com/sarakanyal03/CDS_Experiment8/blob/main/EXP8E.png)
 6) F : Diagnol addition of a matrix<br>
 
 ```
@@ -298,3 +308,16 @@ int main()
 return 0;
 }
 ```
+OUTPUT F: <BR>
+![EXP8F](https://github.com/sarakanyal03/CDS_Experiment8/blob/main/EXP8F.png)
+
+# CONCLUSION
+This experiment provides valuable insight into fundamental concepts in programming, particularly in handling data structures that require multi-dimensional organization. Through this process, we gain a deeper understanding of how to: <br>
+
+* Efficiently Store and Manipulate Data: Using 2D arrays, we can efficiently store data in a tabular format, making it easier to perform operations like addition, subtraction, and multiplication of matrices.
+
+* Develop Problem-Solving Skills: Implementing matrix operations enhances logical thinking and problem-solving skills, as it requires careful consideration of indices, loops, and data handling.
+
+* Understand Memory Management: Working with 2D arrays in C++ also provides an understanding of how memory is allocated and accessed in programming, especially in managing rows and columns of data.
+
+* Apply Concepts in Real-World Scenarios: Matrix operations are fundamental in various fields such as engineering, computer graphics, machine learning, and scientific computing. Understanding how to implement these in C++ prepares us to tackle more complex problems in these domains.
