@@ -26,11 +26,9 @@ For eg.
 ```
 int value = matrix[1][2];
 ```
-# CODE 
-1) A  
+# CODE AND OUTPUT 
+1) A : Entering elements of matrix <br>
 ```
-//SARA KANYAL
-//23070123115
 //To study and implement C++ 2D Array Matrices 
 #include <iostream>
 using namespace std;
@@ -52,10 +50,8 @@ int main() {
     }
 }
 ```
-2) B
+2) B : Addition of two matrices <br>
 ```
-//SARA KANYAL
-//23070123115
 //Addition of two matrices
 #include <iostream>
 using namespace std;
@@ -99,10 +95,8 @@ int main() {
     
 }
 ```
-3) C
+3) C: Subtraction of two matrices <br>
 ```
-//SARA KANYAL
-//23070123115
 //Subtraction of two matrices
 #include <iostream>
 using namespace std;
@@ -146,7 +140,7 @@ int main() {
     
 }
 ```
-4) D
+4) D : Multiplication of two matrices <br>
 ```
 // Matrix multiplication 
 #include <iostream>
@@ -215,7 +209,7 @@ int main() {
     return 0;
 }
 ```
-5) E
+5) E : Transpose of a matrix <br>
 ```
 #include <iostream>
 using namespace std;
@@ -256,8 +250,9 @@ int main() {
 
     return 0;
 }
-```
-6) F
+``` 
+6) F : Diagnol addition of a matrix<br>
+
 ```
 //DIAGONAL ADDITION 
 #include <iostream>
