@@ -27,4 +27,265 @@ For eg.
 int value = matrix[1][2];
 ```
 # CODE 
+1) A  
+```
+//SARA KANYAL
+//23070123115
+//To study and implement C++ 2D Array Matrices 
+#include <iostream>
+using namespace std;
 
+int main() {
+    int temp[3][3], i, j,k,l;
+    for (i=0 ; i<3 ; i++){
+        for (j=0;j<3;j++){
+            cout<<" Enter element-("<<i<<j<<"):";
+            cin>>temp[i][j];
+        }
+    }
+    for(k-0; k<3; k++){
+        for (l=0;l<3;l++){
+            cout<<temp[k][l];
+            cout<<" ";
+    }
+    cout <<endl;
+    }
+}
+```
+2) B
+```
+//SARA KANYAL
+//23070123115
+//Addition of two matrices
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Define matrix dimensions
+    int r1 = 3, c1 = 3;
+    int r2 = 3, c2 = 3;
+
+    int m1[r1][c1], m2[r2][c2], sum[r1][c1];
+
+    cout << "Enter elements of the first matrix:" << endl;
+    for (int i = 0; i < r1; ++i) {
+        for (int j = 0; j < c1; ++j) {
+            cout << "Enter element at position (" << i << ", " << j << "): ";
+            cin >> m1[i][j];
+        }
+    }
+    cout << "Enter elements of the second matrix:" << endl;
+    for (int i = 0; i < r2; ++i) {
+        for (int j = 0; j < c2; ++j) {
+            cout << "Enter element at position (" << i << ", " << j << "): ";
+            cin >> m2[i][j];
+        }
+    }
+    for (int i = 0; i < r1; ++i) {
+        for (int j = 0; j < c1; ++j) {
+            sum[i][j] = m1[i][j] + m2[i][j];
+        }
+    }
+ 
+
+    cout << endl << "Sum of matrices:" << endl;
+    for (int i = 0; i < r1; ++i) {
+        for (int j = 0; j < c1; ++j) {
+            cout << sum[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+    
+}
+```
+3) C
+```
+//SARA KANYAL
+//23070123115
+//Subtraction of two matrices
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Define matrix dimensions
+    int r1 = 3, c1 = 3;
+    int r2 = 3, c2 = 3;
+
+    int m1[r1][c1], m2[r2][c2], difference[r1][c1];
+
+    cout << "Enter elements of the first matrix:" << endl;
+    for (int i = 0; i < r1; ++i) {
+        for (int j = 0; j < c1; ++j) {
+            cout << "Enter element at position (" << i << ", " << j << "): ";
+            cin >> m1[i][j];
+        }
+    }
+    cout << "Enter elements of the second matrix:" << endl;
+    for (int i = 0; i < r2; ++i) {
+        for (int j = 0; j < c2; ++j) {
+            cout << "Enter element at position (" << i << ", " << j << "): ";
+            cin >> m2[i][j];
+        }
+    }
+    for (int i = 0; i < r1; ++i) {
+        for (int j = 0; j < c1; ++j) {
+            difference[i][j] = m1[i][j] - m2[i][j];
+        }
+    }
+ 
+
+    cout << endl << "Difference of matrices:" << endl;
+    for (int i = 0; i < r1; ++i) {
+        for (int j = 0; j < c1; ++j) {
+            cout << difference[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+    
+}
+```
+4) D
+```
+// Matrix multiplication 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int r1, c1, r2, c2;
+    
+    // Input dimensions of the first matrix
+    cout << "Enter rows and columns for the first matrix: ";
+    cin >> r1 >> c1;
+
+    // Input dimensions of the second matrix
+    cout << "Enter rows and columns for the second matrix: ";
+    cin >> r2 >> c2;
+
+    // Check if matrix multiplication is possible
+    if (c1 != r2) {
+        cout << "Matrix multiplication not possible!" << endl;
+        return 0;
+    }
+
+    // Define the matrices
+    int m1[r1][c1], m2[r2][c2], result[r1][c2];
+
+    // Input elements of the first and second matrix
+    cout << "Enter elements of the first matrix:" << endl;
+    for (int i = 0; i < r1; ++i) {
+        for (int j = 0; j < c1; ++j) {
+            cout << "Enter element at position (" << i << ", " << j << "): ";
+            cin >> m1[i][j];
+        }
+    }
+    cout << "Enter elements of the second matrix:" << endl;
+    for (int i = 0; i < r2; ++i) {
+        for (int j = 0; j < c2; ++j) {
+            cout << "Enter element at position (" << i << ", " << j << "): ";
+            cin >> m2[i][j];
+        }
+    } 
+    // Initialize the result matrix with zeros
+    for (int i = 0; i < r1; i++) {
+        for (int j = 0; j < c2; j++) {
+            result[i][j] = 0;
+        }
+    }
+
+    // Matrix multiplication
+    for (int i = 0; i < r1; i++) {
+        for (int j = 0; j < c2; j++) {
+            for (int k = 0; k < c1; k++) {
+                result[i][j] += m1[i][k] * m2[k][j];
+            }
+        }
+    }
+
+    // Display the result
+    cout << "Resultant matrix:\n";
+    for (int i = 0; i < r1; i++) {
+        for (int j = 0; j < c2; j++) {
+            cout << result[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+5) E
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    int r, c ;
+
+    // Getting the size of the matrix
+    cout << "Enter the number of rows and columns of the matrix: ";
+    cin >> r  >> c ;
+
+    int m[r][c], transpose[c][r];
+
+    // Getting elements of the matrix
+    cout << "Enter elements of the first matrix:" << endl;
+    for (int i = 0; i < r; ++i) {
+        for (int j = 0; j < c; ++j) {
+            cout << "Enter element at position (" << i << ", " << j << "): ";
+            cin >> m[i][j];
+        }
+    }
+
+    // Transposing the matrix
+    for(int i = 0; i < r; ++i) {
+        for(int j = 0; j < c; ++j) {
+            transpose[j][i] = m[i][j];
+        }
+    }
+
+    // Displaying the transpose of the matrix
+    cout << "\nTranspose of the matrix:" << endl;
+    for(int i = 0; i < c; ++i) {
+        for(int j = 0; j < r; ++j) {
+            cout << transpose[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+6) F
+```
+//DIAGONAL ADDITION 
+#include <iostream>
+using namespace std;
+
+
+const int MAX = 100;
+
+void printDiagonalSums(int mat[][MAX], int n) 
+{ 
+    int principal = 0;
+    
+    for (int i = 0; i < n; i++)  
+    { 
+        // Condition for principal diagonal 
+        principal += mat[i][i]; 
+    } 
+  
+    cout << "Sum of the diagonal elements is: " << principal << endl; 
+} 
+
+int main() 
+{ 
+    int a[][MAX] = {{1, 2, 3, 4},  
+                    {5, 6, 7, 8},  
+                    {1, 2, 3, 4},  
+                    {5, 6, 7, 8}}; 
+    printDiagonalSums(a, 4); 
+return 0;
+}
+```
