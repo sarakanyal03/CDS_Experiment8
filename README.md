@@ -34,7 +34,7 @@ ii) Matrix Elements Input: It then prompts the user to enter the elements for th
 iii) Matrix Addition: The program adds the corresponding elements of the two matrices. <br>
 iv) Output: Finally, it prints the resulting matrix after addition. <br>
 <br>
-6) Subtraction of matrices <br>
+6)  Subtraction of matrices <br>
 i) The program first asks the user to input the number of rows and columns for the matrices. <br>
 ii) It then prompts the user to input the elements for both matrices. <br>
 iii) The subtraction is performed by iterating through each element of the matrices and subtracting the corresponding elements. <br>
