@@ -39,7 +39,7 @@ i) The program first asks the user to input the number of rows and columns for t
 ii) It then prompts the user to input the elements for both matrices. <br>
 iii) The subtraction is performed by iterating through each element of the matrices and subtracting the corresponding elements. <br>
 iv) The resultant matrix is then printed on the screen. <br>
-7) 
+
 # CODE AND OUTPUT 
 1) A : Entering elements of matrix <br>
 ```
