@@ -27,6 +27,12 @@ For eg.
 ```
 int value = matrix[1][2];
 ```
+5) Addition of matrices : <br>
+To add two matrices in C++, you can use a nested loop structure to iterate through each element of the matrices and add corresponding elements. <br>
+i) Matrix Size Input: The program asks for the number of rows and columns to define the size of the matrices. <br>
+ii) Matrix Elements Input: It then prompts the user to enter the elements for the two matrices. <br>
+iii) Matrix Addition: The program adds the corresponding elements of the two matrices. <br>
+iv) Output: Finally, it prints the resulting matrix after addition. <br>
 # CODE AND OUTPUT 
 1) A : Entering elements of matrix <br>
 ```
